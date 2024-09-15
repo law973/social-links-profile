@@ -9,8 +9,6 @@
     justify-content: center;
     margin-top: 2.75rem;
     max-width: 100%;
-    min-width: 7.313rem;
-    min-height: fit-content;
     padding: 24px;
     text-align: center;
     width: clamp(20.438rem, 80vw, 24rem);
@@ -21,12 +19,9 @@
     border-radius: 5px;
     display: inline-block;
     font-weight: 600;
-    max-width: 100%;
-    padding-bottom: 14px;
-    padding-top: 14px;
+    padding: 14px 0;
     text-decoration: none;
     width: 100%;
-    word-wrap: break-word;
 
     &:hover, &:focus, &:active {
         background-color: var(--green);

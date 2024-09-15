@@ -1,22 +1,22 @@
-# Frontend Mentor - Social Links Profile solution
+# Frontend Mentor - Social Links Profile Solution
 
 This is a solution to the [Social Links Profile Challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Table of contents
+## Table of Contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
+  - [The Challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
+- [My Process](#my-process)
+  - [Built With](#built-with)
+  - [What I Learned](#what-i-learned)
+  - [Continued Development](#continued-development)
 - [Author](#author)
 
 ## Overview
 
-### The challenge
+### The Challenge
 
 Users should be able to:
 
@@ -24,46 +24,52 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot/screenshot.png)
+![](./screenshot/screenshot_light.png)
 
 ### Links
 
 - Solution URL: [Frontend Mentor](https://your-solution-url.com)
 - Live Site URL: [GitHub Pages](https://law973.github.io/social-links-profile/)
 
-## My process
+## My Process
 
-### Built with
+### Built With
 
 - Semantic HTML
 - CSS variables
 - Flexbox
 - SCSS
-- Mobile-first workflow
+- JavaScript
 
-### What I learned
+### What I Learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+In order to create space between the links within the card, I used a general sibling selector (~) on the li elements. I'm not sure if I've ever used SCSS to nest combinators before, so that was a neat thing to try out.  
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+li {
+    list-style-type: none;
+
+    ~ li {
+        margin-top: 1rem;
+    }
 }
 ```
 
-### Continued development
+Also, I've started on trying to using rem values in place of pixels where appropriate (such as font sizes and margins), and made use of the font shorthand property to shorten up the code. 
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+```css
+body {
+    font: 400 0.875rem $font-stack;
+    // font-family: $font-stack;
+    // font-size: 0.875rem;
+    // font-weight: 400;
+}
+```
+
+### Continued Development
+
+I would like to continue using rem units more often and learn more about how those and em units work.
 
 ## Author
 

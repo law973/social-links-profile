@@ -1,4 +1,4 @@
-html, body {
+html {
     height: 100%;
 }
 
@@ -8,14 +8,11 @@ body {
     color: var(--white);
     display: flex;
     flex-direction: column;
-    font-family: $font-stack;
-    font-size: 0.875rem;
-    font-weight: 400;
+    font: 400 0.875rem $font-stack;
     height: fit-content;
     justify-content: center;
     margin: 0;
     min-height: 100%;
-
     text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -26,18 +23,14 @@ a {
 }
 
 h1 {
-    font-size: 1.488rem;
-    font-weight: 700;
-    margin-bottom: 0;
-    margin-top: 1.625rem;
+    font: 700 1.488rem $font-stack;
+    margin: 1.625rem 0 0;
 }
 
 h2 {
     color: var(--green);
-    font-weight: 600;
-    font-size: 0.875rem;
-    margin-bottom: 1.813rem;
-    margin-top: 0.5rem;
+    font: 600 0.875rem $font-stack;
+    margin: 0.5rem 0 1.813rem;
 }
 
 img {
@@ -60,13 +53,11 @@ main {
 }
 
 p {
-    margin-bottom: 1.625rem;
-    margin-top: 0;
+    margin: 0 0 1.625rem;
 }
 
 ul {
-    margin-bottom: 0;
-    margin-top: 0;
+    margin: 0;
     padding-left: 0;
 }
 

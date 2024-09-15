@@ -1,7 +1,7 @@
 @font-face {
   font-display: swap;
   font-family: "Inter";
-  src: url("assets/fonts/Inter-VariableFont_slnt,wght.ttf");
+  src: url("../assets/fonts/Inter-VariableFont_slnt,wght.ttf");
 }
 :root {
   --green: hsl(75, 94%, 57%);
@@ -11,7 +11,15 @@
   --white: hsl(0, 0%, 100%);
 }
 
-html, body {
+[data-theme=light] {
+  --green: hsl(255, 91%, 44%);
+  --grey-700: hsl(0, 0%, 100%);
+  --grey-800: hsl(0, 0%, 92%);
+  --grey-900: hsl(0, 0%, 88%);
+  --white: hsl(0, 0%, 0%);
+}
+
+html {
   height: 100%;
 }
 
@@ -21,9 +29,7 @@ body {
   color: var(--white);
   display: flex;
   flex-direction: column;
-  font-family: "Inter", sans-serif;
-  font-size: 0.875rem;
-  font-weight: 400;
+  font: 400 0.875rem "Inter", sans-serif;
   height: fit-content;
   justify-content: center;
   margin: 0;
@@ -38,18 +44,14 @@ a {
 }
 
 h1 {
-  font-size: 1.488rem;
-  font-weight: 700;
-  margin-bottom: 0;
-  margin-top: 1.625rem;
+  font: 700 1.488rem "Inter", sans-serif;
+  margin: 1.625rem 0 0;
 }
 
 h2 {
   color: var(--green);
-  font-weight: 600;
-  font-size: 0.875rem;
-  margin-bottom: 1.813rem;
-  margin-top: 0.5rem;
+  font: 600 0.875rem "Inter", sans-serif;
+  margin: 0.5rem 0 1.813rem;
 }
 
 img {
@@ -71,13 +73,11 @@ main {
 }
 
 p {
-  margin-bottom: 1.625rem;
-  margin-top: 0;
+  margin: 0 0 1.625rem;
 }
 
 ul {
-  margin-bottom: 0;
-  margin-top: 0;
+  margin: 0;
   padding-left: 0;
 }
 
@@ -102,8 +102,6 @@ ul {
   justify-content: center;
   margin-top: 2.75rem;
   max-width: 100%;
-  min-width: 7.313rem;
-  min-height: fit-content;
   padding: 24px;
   text-align: center;
   width: clamp(20.438rem, 80vw, 24rem);
@@ -114,12 +112,9 @@ ul {
   border-radius: 5px;
   display: inline-block;
   font-weight: 600;
-  max-width: 100%;
-  padding-bottom: 14px;
-  padding-top: 14px;
+  padding: 14px 0;
   text-decoration: none;
   width: 100%;
-  word-wrap: break-word;
 }
 .card__link:hover, .card__link:focus, .card__link:active {
   background-color: var(--green);
@@ -127,11 +122,9 @@ ul {
 }
 
 .attribution {
-  bottom: 0;
   font-size: 0.688rem;
   margin: 1rem 0;
   opacity: 0;
-  text-align: center;
 }
 .attribution:hover {
   opacity: 1;

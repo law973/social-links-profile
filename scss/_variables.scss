@@ -8,3 +8,11 @@ $font-stack: "Inter", sans-serif;
     --grey-900: hsl(0, 0%, 8%);
     --white: hsl(0, 0%, 100%);
 }
+
+[data-theme='light'] {
+    --green: hsl(255, 91%, 44%);
+    --grey-700: hsl(0, 0%, 100%);
+    --grey-800: hsl(0, 0%, 92%);
+    --grey-900: hsl(0, 0%, 88%);
+    --white: hsl(0, 0%, 0%);
+}
