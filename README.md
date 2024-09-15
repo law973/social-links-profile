@@ -38,6 +38,7 @@ Users should be able to:
 - Semantic HTML
 - CSS variables
 - Flexbox
+- SCSS
 - Mobile-first workflow
 
 ### What I learned

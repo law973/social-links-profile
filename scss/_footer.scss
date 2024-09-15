@@ -1,0 +1,17 @@
+.attribution { 
+    bottom: 0;
+    font-size: 0.688rem;
+    margin: 1rem 0;
+    opacity: 0;
+    text-align: center; 
+
+    &:hover {
+        opacity: 1;
+    }
+
+    a {
+        &:hover, &:focus, &:active {
+            color: var(--green); 
+        }
+    }
+}

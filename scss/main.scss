@@ -1,0 +1,11 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Inter';
+    src: url('assets/fonts/Inter-VariableFont_slnt\,wght.ttf');
+}
+
+// Import SCSS partials
+@import 'variables';
+@import 'reset';
+@import 'card';
+@import 'footer';

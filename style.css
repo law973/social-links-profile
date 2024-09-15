@@ -1,18 +1,18 @@
-@font-face {
+/* @font-face {
     font-display: swap;
     font-family: 'Inter';
     src: url('assets/fonts/Inter-VariableFont_slnt\,wght.ttf');
-}
+} */
 
-:root {
+/* :root {
     --green: hsl(75, 94%, 57%);
     --grey-700: hsl(0, 0%, 20%);
     --grey-800: hsl(0, 0%, 12%);
     --grey-900: hsl(0, 0%, 8%);
     --white: hsl(0, 0%, 100%);
-}
+} */
 
-html, body {
+/* html, body {
     height: 100%;
 }
 
@@ -88,9 +88,9 @@ ul {
 ::selection {
     background: var(--green);
     color: var(--grey-900);
-}
+} */
 
-.attribution { 
+/* .attribution { 
     bottom: 0;
     font-size: 0.688rem; 
     position: absolute;
@@ -102,9 +102,9 @@ ul {
 
     .attribution a:hover, .attribution a:focus, .attribution a:active { 
         color: var(--green); 
-    }
+    } */
 
-.card {
+/* .card {
     align-items: center;
     background-color: var(--grey-800);
     border-radius: 10px;
@@ -138,4 +138,4 @@ ul {
     .card__link:hover, .card__link:focus, .card__link:active {
         background-color: var(--green);
         color: var(--grey-900);
-    }
+    } */
