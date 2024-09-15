@@ -6,7 +6,7 @@ This is a solution to the [Social Links Profile Challenge on Frontend Mentor](ht
 
 - [Overview](#overview)
   - [The Challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [Screenshots](#screenshots)
   - [Links](#links)
 - [My Process](#my-process)
   - [Built With](#built-with)
@@ -22,14 +22,14 @@ Users should be able to:
 
 - See hover and focus states for all interactive elements on the page
 
-### Screenshot
+### Screenshots
 
 ![](./screenshot/screenshot.png)
 ![](./screenshot/screenshot_light.png)
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/social-links-profile-with-scss-and-light-mode-rb0p1G8wC1)
 - Live Site URL: [GitHub Pages](https://law973.github.io/social-links-profile/)
 
 ## My Process
