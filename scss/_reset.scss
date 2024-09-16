@@ -13,24 +13,13 @@ body {
     justify-content: center;
     margin: 0;
     min-height: 100%;
-    text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
 }
 
 a {
     color: var(--white);
-}
-
-h1 {
-    font: 700 1.488rem $font-stack;
-    margin: 1.625rem 0 0;
-}
-
-h2 {
-    color: var(--green);
-    font: 600 0.875rem $font-stack;
-    margin: 0.5rem 0 1.813rem;
 }
 
 img {
@@ -45,11 +34,6 @@ li {
     ~ li {
         margin-top: 1rem;
     }
-}
-
-main {
-    max-width: 100%;
-    width: clamp(17.438rem, 100%, 19rem);
 }
 
 p {

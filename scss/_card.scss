@@ -28,3 +28,19 @@
         color: var(--grey-900);
     }
 }
+
+.card__links_container {
+    max-width: 100%;
+    width: clamp(17.438rem, 100%, 19rem);
+}
+
+.card__location {
+    color: var(--green);
+    font: 600 0.875rem $font-stack;
+    margin: 0.5rem 0 1.813rem;
+}
+
+.card__name {
+    font: 700 1.488rem $font-stack;
+    margin: 1.625rem 0 0;
+}

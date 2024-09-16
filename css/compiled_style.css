@@ -34,24 +34,13 @@ body {
   justify-content: center;
   margin: 0;
   min-height: 100%;
-  text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 a {
   color: var(--white);
-}
-
-h1 {
-  font: 700 1.488rem "Inter", sans-serif;
-  margin: 1.625rem 0 0;
-}
-
-h2 {
-  color: var(--green);
-  font: 600 0.875rem "Inter", sans-serif;
-  margin: 0.5rem 0 1.813rem;
 }
 
 img {
@@ -65,11 +54,6 @@ li {
 }
 li ~ li {
   margin-top: 1rem;
-}
-
-main {
-  max-width: 100%;
-  width: clamp(17.438rem, 100%, 19rem);
 }
 
 p {
@@ -89,6 +73,20 @@ ul {
 ::selection {
   background: var(--green);
   color: var(--grey-900);
+}
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
 }
 
 .card {
@@ -121,13 +119,25 @@ ul {
   color: var(--grey-900);
 }
 
+.card__links_container {
+  max-width: 100%;
+  width: clamp(17.438rem, 100%, 19rem);
+}
+
+.card__location {
+  color: var(--green);
+  font: 600 0.875rem "Inter", sans-serif;
+  margin: 0.5rem 0 1.813rem;
+}
+
+.card__name {
+  font: 700 1.488rem "Inter", sans-serif;
+  margin: 1.625rem 0 0;
+}
+
 .attribution {
   font-size: 0.688rem;
   margin: 1rem 0;
-  opacity: 0;
-}
-.attribution:hover {
-  opacity: 1;
 }
 .attribution a:hover, .attribution a:focus, .attribution a:active {
   color: var(--green);
