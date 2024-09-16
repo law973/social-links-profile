@@ -1,10 +1,14 @@
 .attribution { 
     font-size: 0.688rem;
     margin: 1rem 0;
+    transition: color 0.5s linear;
 
     a {
+        transition: color 0.5s linear;
+
         &:hover, &:focus, &:active {
             color: var(--green); 
+            transition: none;
         }
     }
 }

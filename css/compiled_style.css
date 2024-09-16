@@ -19,6 +19,11 @@
   --white: hsl(0, 0%, 0%);
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 html {
   height: 100%;
 }
@@ -30,22 +35,33 @@ body {
   display: flex;
   flex-direction: column;
   font: 400 0.875rem "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
   height: fit-content;
   justify-content: center;
-  margin: 0;
   min-height: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  transition: background-color 0.5s linear;
 }
 
 a {
   color: var(--white);
 }
 
+button {
+  color: var(--white);
+  display: block;
+  font: inherit;
+  margin: 1rem auto 0;
+}
+
 img {
   border-radius: 50%;
+  display: block;
   height: 88px;
+  margin: auto;
+  max-width: 100%;
   width: 88px;
 }
 
@@ -58,10 +74,11 @@ li ~ li {
 
 p {
   margin: 0 0 1.625rem;
+  overflow-wrap: break-word;
+  transition: color 0.5s linear;
 }
 
 ul {
-  margin: 0;
   padding-left: 0;
 }
 
@@ -93,15 +110,15 @@ ul {
   align-items: center;
   background-color: var(--grey-800);
   border-radius: 10px;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   height: clamp(36.25rem, 70vh, 38.25rem);
   justify-content: center;
-  margin-top: 2.75rem;
+  margin-top: 1.4rem;
   max-width: 100%;
   padding: 24px;
   text-align: center;
+  transition: background-color 0.5s linear;
   width: clamp(20.438rem, 80vw, 24rem);
 }
 
@@ -112,11 +129,13 @@ ul {
   font-weight: 600;
   padding: 14px 0;
   text-decoration: none;
+  transition: background-color 0.5s linear, color 0.5s linear;
   width: 100%;
 }
 .card__link:hover, .card__link:focus, .card__link:active {
   background-color: var(--green);
   color: var(--grey-900);
+  transition: none;
 }
 
 .card__links_container {
@@ -135,12 +154,34 @@ ul {
   margin: 1.625rem 0 0;
 }
 
+.button {
+  background-color: var(--grey-700);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0.313rem var(--grey-800);
+  cursor: pointer;
+  padding: 7px;
+}
+.button:hover, .button:active {
+  background-color: var(--green);
+  color: var(--grey-900);
+}
+.button:active {
+  box-shadow: none;
+  transform: translateY(0.313rem);
+}
+
 .attribution {
   font-size: 0.688rem;
   margin: 1rem 0;
+  transition: color 0.5s linear;
+}
+.attribution a {
+  transition: color 0.5s linear;
 }
 .attribution a:hover, .attribution a:focus, .attribution a:active {
   color: var(--green);
+  transition: none;
 }
 
 /*# sourceMappingURL=compiled_style.css.map */

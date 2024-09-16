@@ -2,15 +2,15 @@
     align-items: center;
     background-color: var(--grey-800);
     border-radius: 10px;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     height: clamp(36.25rem, 70vh, 38.25rem);
     justify-content: center;
-    margin-top: 2.75rem;
+    margin-top: 1.4rem;
     max-width: 100%;
     padding: 24px;
     text-align: center;
+    transition: background-color 0.5s linear;
     width: clamp(20.438rem, 80vw, 24rem);
 }
 
@@ -21,11 +21,13 @@
     font-weight: 600;
     padding: 14px 0;
     text-decoration: none;
+    transition: background-color 0.5s linear, color 0.5s linear;
     width: 100%;
 
     &:hover, &:focus, &:active {
         background-color: var(--green);
         color: var(--grey-900);
+        transition: none;
     }
 }
 
